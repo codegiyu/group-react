@@ -13,10 +13,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        muted: '#8692A6'
+        muted: '#8692A6',
+        ash: "#8692A6"
       },
       fontFamily: {
         inter: ["'Inter'", 'sans-serif']
+      },
+      fontSize: {
+        sizePara: ['18px', '28px']
       }
     },
   },
