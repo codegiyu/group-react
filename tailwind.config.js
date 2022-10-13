@@ -11,7 +11,14 @@ module.exports = {
         '2xl': '5rem',
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        muted: '#8692A6'
+      },
+      fontFamily: {
+        inter: ["'Inter'", 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

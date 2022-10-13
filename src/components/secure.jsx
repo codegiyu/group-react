@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import logopic from './img/logo.png'
+import padlock from '../img/padlock.png'
 
 // Delete the original index.js after creating your branch, then rename this one to index.js
 // The above imports are alright unless you have an image to use, then you add that import too, 
@@ -9,15 +9,13 @@ import './index.css';
 // Please delete these comments after using them
 // Here's a sample functional component to guide you in creating yours
 
-const Block = () => {
+const Secure = () => {
     return (
-        <div className='block w-full'>
-            <section className='py-10 w-full'>
-                <div className='container mx-auto py-10 bg-blue-300 rounded-lg px-8'>
-                    <h1 className='text-5xl font-bold text-center font-mono'>A random header</h1>
-                    <p className='text-xl mt-4'>Some random text</p>
-                </div>
-            </section>
+        <div className='w-full flex justify-center py-5'>
+            <div className='flex items-center'>
+              <img src={padlock} alt="security"/>
+              <p className='text-muted font-inter text-xs ml-3'>Your Info is safely secured</p>
+            </div>
         </div>
     )
 }
@@ -28,7 +26,7 @@ const Block = () => {
 const App = () => {
   return (
     <div className='app'>
-      <Block />
+      <Secure />
     </div>
   )
 }
@@ -40,3 +38,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+export default Secure
