@@ -12,11 +12,12 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        muted: '#8692A6',
+        ash: "#8692A6"
+      },
       fontFamily: {
         inter: ["'Inter'", 'sans-serif']
-      },
-      colors: {
-        ash: "#8692A6"
       },
       fontSize: {
         sizePara: ['18px', '28px']

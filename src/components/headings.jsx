@@ -1,13 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import logopic from './img/logo.png'
 
-// Delete the original index.js after creating your branch, then rename this one to index.js
-// The above imports are alright unless you have an image to use, then you add that import too, 
-// following the picture import example above.
-// Please delete these comments after using them
-// Here's a sample functional component to guide you in creating yours
 
 const Heading = ({heading, paragraph}) => {
   return (
