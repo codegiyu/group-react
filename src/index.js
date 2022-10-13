@@ -9,7 +9,7 @@ import './index.css';
 // Please delete these comments after using them
 // Here's a sample functional component to guide you in creating yours
 
-const Block = ({heading, paragraph}) => {
+const Heading = ({heading, paragraph}) => {
     return (
         <div className='block w-full'>
             <section className='w-full'>
@@ -22,13 +22,15 @@ const Block = ({heading, paragraph}) => {
     )
 }
 
+export default Heading
+
 
 
 
 const App = () => {
   return (
     <div className='app'>
-      <Block heading={"Join Us!"}
+      <Heading heading={"Join Us!"}
       paragraph={"To begin this journey, tell us what type of account you'd be opening."}
       />
     </div>
