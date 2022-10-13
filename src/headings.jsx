@@ -9,28 +9,32 @@ import './index.css';
 // Please delete these comments after using them
 // Here's a sample functional component to guide you in creating yours
 
-const Block = () => {
-    return (
-        <div className='block w-full'>
-            <section className='py-10 w-full'>
-                <div className='container mx-auto py-10 bg-blue-300 rounded-lg px-8'>
-                    <h1 className='text-5xl font-bold text-center font-mono'>A random header</h1>
-                    <p className='text-xl mt-4'>Some random text</p>
-                </div>
-            </section>
-        </div>
-    )
+const Heading = ({heading, paragraph}) => {
+  return (
+      <div className='block w-full'>
+          <section className='w-full'>
+              <div className='mx-auto py-10 font-inter'>
+                  <h1 className='text-3xl font-bold text-left'>{heading}</h1>
+                  <p className='mt-2 font-normal text-left text-ash text-sizePara'>{paragraph}</p>
+              </div>
+          </section>
+      </div>
+  )
 }
+
+export default Heading
 
 
 
 
 const App = () => {
-  return (
-    <div className='app'>
-      <Block />
-    </div>
-  )
+return (
+  <div className='app'>
+    <Heading heading={"Join Us!"}
+    paragraph={"To begin this journey, tell us what type of account you'd be opening."}
+    />
+  </div>
+)
 }
 
 // The below code should not be touched. 
