@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import '../index.css';
 import padlock from '../img/padlock.png'
 
@@ -15,12 +14,5 @@ const Secure = () => {
     )
 }
 
-// const App = () => {
-//   return (
-//     <div className='app'>
-//       <Secure />
-//     </div>
-//   )
-// }
 
 export default Secure

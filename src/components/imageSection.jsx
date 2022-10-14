@@ -1,12 +1,9 @@
 import React from "react";
-// import ReactDom from "react-dom/client";
 import { Outlet, Link } from "react-router-dom";
-
 import '../index.css';
 import logo from '../img/logo.png';
 import circles from '../img/circles.png';
 import angle from '../img/angle.png';
-// import background from '../img/background.png';
 import check from '../img/check.png';
 import dots from '../img/dots.png';
 import quote from '../img/quote.png';
@@ -43,21 +40,5 @@ const ImageSection = () => {
     )
 }
 
-// const App = () => {
-//     return (
-//         <div className="App flex items-center h-screen w-full px-24">
-//             <div className="h-[90%] w-[30%]">
-//                 <ImageSection />
-//             </div>
-//         </div>
-//     )
-// }
-
-// const root = ReactDom.createRoot(document.getElementById('root'))
-// root.render(
-//     <React.StrictMode>
-//         <App />
-//     </React.StrictMode>
-// )
 
 export default ImageSection

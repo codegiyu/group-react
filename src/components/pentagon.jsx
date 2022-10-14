@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactDOM from "react-dom/client";
 import "../index.css";
 import briefcase from '../img/briefcase.png';
 import polygonOne from '../img/PolygonOne.png';
@@ -50,24 +49,5 @@ const Pentagon = ({headerOne, headerTwo, summaryOne, summaryTwo}) => {
     );
 }
 
-// const App = () => {
-//     return (
-//       <div>
-//         <Pentagon
-//           headerOne={"Individual"}
-//           summaryOne={"Personal account to manage all you activities."}
-//           headerTwo={"Business"}
-//           summaryTwo={"Own or belong to a company, this is for you."}
-//         />
-//       </div>
-//     );
-// }
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
 
 export default Pentagon;

@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactDOM from "react-dom/client";
 import '../index.css'
 import ImageSection from "../components/imageSection";
 import Heading from "../components/headings";
