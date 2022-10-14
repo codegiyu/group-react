@@ -15,20 +15,12 @@ const Secure = () => {
     )
 }
 
-const App = () => {
-  return (
-    <div className='app'>
-      <Secure />
-    </div>
-  )
-}
-
-// The below code should not be touched. 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// const App = () => {
+//   return (
+//     <div className='app'>
+//       <Secure />
+//     </div>
+//   )
+// }
 
 export default Secure

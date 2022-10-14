@@ -1,5 +1,7 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+// import ReactDom from "react-dom/client";
+import { Outlet, Link } from "react-router-dom";
+
 import '../index.css';
 import logo from '../img/logo.png';
 import circles from '../img/circles.png';
@@ -17,9 +19,11 @@ const ImageSection = () => {
             <img src={ circles } alt="circles" className="absolute bottom-0 left-0 h-24" />
             <img src={ dots } alt="dots" className="absolute top-[20%] right-[20%] h-10" />
             <div className="relative flex flex-col justify-between text-white w-full h-full z-10 pl-12 pr-14 py-9">
-                <header className="w-full flex gap-1 items-center">
-                    <img src={ logo } alt="logo" className="h-[20px]" />
-                    <p className="font-poppins text-xs font-normal mt-2">Oasis</p>
+                <header className="w-full">
+                    <Link to="/"><div className="w-auto flex gap-1 items-center">
+                        <img src={ logo } alt="logo" className="h-[20px]" />
+                        <p className="font-poppins text-xs font-normal mt-2">Oasis</p>
+                    </div></Link>
                 </header>
                 <div className="flex flex-col gap-3">
                     <img src={ quote } alt="quote" className="w-4 mb-3" />
@@ -34,25 +38,26 @@ const ImageSection = () => {
                 </div>
                 <div></div>
             </div>
+            <Outlet />
         </div>
     )
 }
 
-const App = () => {
-    return (
-        <div className="App flex items-center h-screen w-full px-24">
-            <div className="h-[90%] w-[30%]">
-                <ImageSection />
-            </div>
-        </div>
-    )
-}
+// const App = () => {
+//     return (
+//         <div className="App flex items-center h-screen w-full px-24">
+//             <div className="h-[90%] w-[30%]">
+//                 <ImageSection />
+//             </div>
+//         </div>
+//     )
+// }
 
-const root = ReactDom.createRoot(document.getElementById('root'))
-root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-)
+// const root = ReactDom.createRoot(document.getElementById('root'))
+// root.render(
+//     <React.StrictMode>
+//         <App />
+//     </React.StrictMode>
+// )
 
 export default ImageSection

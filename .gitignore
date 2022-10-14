@@ -8,7 +8,7 @@
 # testing
 /coverage
 ./src/App.css
-index.css
+./src/**/*.index.css
 
 # production
 /build
