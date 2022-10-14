@@ -14,14 +14,19 @@ module.exports = {
     extend: {
       colors: {
         muted: '#8692A6',
-        ash: "#8692A6"
+        ash: "#8692A6",
+        lightBlue: "#1565D8"
       },
       fontFamily: {
-        inter: ["'Inter'", 'sans-serif']
+        inter: ["'Inter'", 'sans-serif'],
+        poppins: ["'Poppins'", 'sans-serif']
       },
       fontSize: {
         sizePara: ['18px', '28px']
-      }
+      },
+      backgroundImage: {
+        layer: "url('img/background.png')",
+      },
     },
   },
   plugins: [],
