@@ -5,6 +5,9 @@ import Secure from './secure';
 import Heading from "./headings";
 import Input from "./input";
 import ImageSection from "./imageSection";
+// import S from './secure';
+
+import SignIn from "./signIn";
 
 let heading1 = "Join Us!"
 let paragraph1 ="To begin this journey, tell us what type of account you'd be opening."
@@ -19,6 +22,7 @@ const AllComponents = () => {
             <div className="h-[90%] w-[30%] py-6 flex flex-col gap-12 bg-white">
                 <Input />
                 <Secure />
+                <SignIn />
                 <Heading heading={ heading1 } paragraph={ paragraph1 } />
                 <Pentagon 
                     headerOne={ header1 }
@@ -27,6 +31,7 @@ const AllComponents = () => {
                     summaryTwo={ summary2 }
                 />
                 <ImageSection />
+
             </div>
         </div>
     )
