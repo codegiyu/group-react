@@ -8,20 +8,20 @@ import user from '../img/user.png';
 const Pentagon = ({headerOne, headerTwo, summaryOne, summaryTwo}) => {
     return (
       <main className="">
-        <div className="flex items-center border-2 border-blue-500 rounded-lg py-3 px-5 mb-10 w-full hover:bg-sky-500 hover:text-white cursor-pointer">
+        <div className="flex items-center border border-white shadow hover:shadow-none hover:border-[#1565D8] rounded-lg py-3 px-5 mb-5 w-full hover:bg-[#F5F9FF] cursor-pointer">
           <div className="relative">
             <img src={polygonOne} alt="polygon1" />
             <img src={user} className="absolute top-4 left-4" alt="user-logo" />
           </div>
           <div className="px-5">
-            <h1 className="font-bold text-base">{headerOne}</h1>
-            <p className="text-xs text-muted">{summaryOne}</p>
+            <h1 className="font-bold text-xs">{headerOne}</h1>
+            <p className="text-[11px] text-muted">{summaryOne}</p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            fill="currentColor"
+            width="25"
+            height="25"
+            fill="#1565D8"
             className="bi bi-arrow-right-short"
             viewBox="0 0 16 16"
           >
@@ -31,7 +31,7 @@ const Pentagon = ({headerOne, headerTwo, summaryOne, summaryTwo}) => {
             />
           </svg>
         </div>
-        <div className="flex border-2 rounded-lg shadow-lg py-3 px-5 w-full cursor-pointer hover:bg-sky-500 hover:text-white">
+        <div className="flex border border-white rounded-lg shadow hover:shadow-none hover:border-[#1565D8] py-3 px-5 w-full cursor-pointer hover:bg-[#F5F9FF]">
           <div className="relative">
             <img src={polygonTwo} alt="polygon1" />
             <img
@@ -41,8 +41,8 @@ const Pentagon = ({headerOne, headerTwo, summaryOne, summaryTwo}) => {
             />
           </div>
           <div className="px-5">
-            <h1 className="font-bold text-base">{headerTwo}</h1>
-            <p className="text-xs text-muted">{summaryTwo}</p>
+            <h1 className="font-bold text-xs">{headerTwo}</h1>
+            <p className="text-[11px] text-muted">{summaryTwo}</p>
           </div>
         </div>
       </main>

@@ -5,6 +5,7 @@ import './index.css';
 import Layout from "./pages/layout";
 import Home from "./pages/index";
 import AllComponents from "./components/allComponents";
+import PersonalInfo from "./pages/personalInfo";
 
 
 
@@ -15,6 +16,7 @@ export default function App() {
         <Route exact path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route exact path="all-components" element={<AllComponents />} />
+          <Route exact path="personal-info" element={<PersonalInfo />} />
         </Route>
       </Routes>
     </BrowserRouter>
