@@ -1,5 +1,6 @@
 import React from "react";
 import '../index.css'
+import SignIn from "../components/signIn";
 import ImageSection from "../components/imageSection";
 import Heading from "../components/headings";
 import Pentagon from "../components/pentagon";
@@ -14,16 +15,17 @@ const Home = () => {
                 <div className="w-[45%] h-full">
                     <ImageSection />
                 </div>
-                <div className="w-[55%] h-full py-2 px-24 flex flex-col justify-between bg-white">
-                    <div></div>
-                    <Heading heading={ heading1 } paragraph={ paragraph1 } />
-                    <Pentagon 
-                        headerOne={"Individual"}
-                        summaryOne={"Personal account to manage all you activities."}
-                        headerTwo={"Business"}
-                        summaryTwo={"Own or belong to a company, this is for you."}
-                    />
-                    <div></div>
+                <div className="w-[55%] h-full py-2 pl-20 pr-10 gap-0 flex flex-col bg-white">
+                    <SignIn />
+                    <div className="w-[75%]">
+                        <Heading heading={ heading1 } paragraph={ paragraph1 } />
+                        <Pentagon 
+                            headerOne={"Individual"}
+                            summaryOne={"Personal account to manage all you activities."}
+                            headerTwo={"Business"}
+                            summaryTwo={"Own or belong to a company, this is for you."}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

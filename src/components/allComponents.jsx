@@ -5,6 +5,7 @@ import Secure from './secure';
 import Heading from "./headings";
 import Input from "./input";
 import ImageSection from "./imageSection";
+import InputField from "./inputField";
 // import S from './secure';
 
 import SignIn from "./signIn";
@@ -15,6 +16,10 @@ let header1 = "Individual"
 let summary1 = "Personal account to manage all you activities."
 let header2 = "Business"
 let summary2 = "Own or belong to a company, this is for you."
+let input1 = {type: "text", label: "Your Fullname", placeholder: "Invictus Innocent", isRequired: true}
+let input2 = {type: "text", label: "Email Address", placeholder: "Enter email address", isRequired: false}
+// let {type1, label1, placeholder1} = input1
+// let {type2, label2, placeholder2} = input2
 
 const AllComponents = () => {
     return (
@@ -22,6 +27,8 @@ const AllComponents = () => {
             <div className="h-[90%] w-[30%] py-6 flex flex-col gap-12 bg-white">
                 <Input />
                 <Secure />
+                <InputField prop={input1} />
+                <InputField prop={input2} />
                 <SignIn />
                 <Heading heading={ heading1 } paragraph={ paragraph1 } />
                 <Pentagon 
